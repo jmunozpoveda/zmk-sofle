@@ -46,6 +46,87 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
+    n1_exclamation: n1_exclamation {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N1_EXCLAMATION";
+        bindings = <&kp KP_N1>, <&kp EXCLAMATION>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n2_arroba: n2_arroba {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N2_ARROBA";
+        bindings = <&kp KP_N2>, <&kp EXCLAMATION>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n3_almohadilla: n3_almohadilla {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N3_ALMOHADILLA";
+        bindings = <&kp KP_N3>, <&kp HASH>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n4_dolar: n4_dolar {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N4_DOLAR";
+        bindings = <&kp N1>, <&kp DOLLAR>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n5_porcentaje: n5_porcentaje {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N5_PORCENTAJE";
+        bindings = <&kp KP_N5>, <&kp PERCENT>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n6_ampersand: n6_ampersand {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N6_AMPERSAND";
+        bindings = <&kp KP_N6>, <&kp AMPERSAND>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n7_barra: n7_barra {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N7_BARRA";
+        bindings = <&kp KP_N7>, <&kp SLASH>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n9_left_par: n9_left_par {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N9_LEFT_PAR";
+        bindings = <&kp KP_N9>, <&kp LEFT_PARENTHESIS>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n0_right_par: n0_right_par {
+        compatible = "zmk,behavior-mod-morph";
+        label = "N0_RIGHT_PAR";
+        bindings = <&kp KP_NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
     behaviors {
     };
 
@@ -117,11 +198,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp KP_N3  &kp N4  &kp N5       &kp UP_ARROW     &kp KP_N6      &kp KP_N7  &n8_star   &kp KP_N9        &kp KP_N0   &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E      &kp R   &kp T        &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O            &kp P       &kp SLASH
-&kp CAPS    &kp A      &kp S         &kp D      &kp F   &kp G        &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L            &kp SEMI    &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z      &kp X         &kp C      &kp V   &kp B        &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT          &kp MINUS   &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &mo 1   &kp SPACE    &kp ENTER        &kp RIGHT_ALT  &kp SPACE  &tog 1     &kp RIGHT_SHIFT  &kp DELETE
+&kp ESC     &n1_exclamation  &n2_arroba    &n3_almohadilla  &n4_dolar  &n5_porcentaje    &kp UP_ARROW     &n6_ampersand  &n7_barra  &n8_star   &n9_left_par     &n0_right_par  &kp BACKSPACE
+&kp TAB     &kp Q            &kp W         &kp E            &kp R      &kp T             &kp DOWN_ARROW   &kp Y          &kp U      &kp I      &kp O            &kp P          &kp SLASH
+&kp CAPS    &kp A            &kp S         &kp D            &kp F      &kp G             &kp LEFT_ARROW   &kp H          &kp J      &kp K      &kp L            &kp SEMI       &kp SINGLE_QUOTE
+&kp LSHFT   &kp Z            &kp X         &kp C            &kp V      &kp B             &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA  &kp DOT          &kp MINUS      &kp ENTER
+&kp C_MUTE  &kp LCTRL        &kp LEFT_ALT  &kp LCMD         &mo 1      &kp SPACE         &kp ENTER        &kp RIGHT_ALT  &kp SPACE  &tog 1     &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
