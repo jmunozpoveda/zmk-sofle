@@ -3,14 +3,14 @@ layers:
   LAYER0:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
-  - KP 2
+  - {t: '2', s: '@'}
   - KP 3
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
   - KP 6
   - KP 7
-  - KP 8
+  - {t: KP 8, s: KP ASTERISK}
   - KP 9
   - KP 0
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -263,9 +263,6 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
-- p: [39, 9]
-  k: '*'
-  l: [LAYER0]
 - p: [39, 2]
   k: '@'
   l: [LAYER0]
