@@ -3,16 +3,16 @@ layers:
   LAYER0:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - KP 2
+  - KP 3
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - KP 6
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
@@ -277,13 +277,19 @@ combos:
   l: [LAYER0]
 - p: [39, 4]
   k: $
+  l: [LAYER0]
 - p: [39, 5]
   k: '%'
+  l: [LAYER0]
 - p: [39, 7]
   k: ^
+  l: [LAYER0]
 - p: [39, 8]
   k: '&'
+  l: [LAYER0]
 - p: [39, 10]
   k: (
+  l: [LAYER0]
 - p: [39, 11]
   k: )
+  l: [LAYER0]
