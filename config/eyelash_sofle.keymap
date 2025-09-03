@@ -58,7 +58,7 @@
     n2_arroba: n2_arroba {
         compatible = "zmk,behavior-mod-morph";
         label = "N2_ARROBA";
-        bindings = <&kp KP_N2>, <&kp EXCLAMATION>;
+        bindings = <&kp KP_N2>, <&kp AT_SIGN>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
