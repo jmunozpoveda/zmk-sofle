@@ -53,6 +53,54 @@
             key-positions = <39 9>;
             layers = <0>;
         };
+
+        dos_arroba {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <39 2>;
+            layers = <0>;
+        };
+
+        uno_exclamation {
+            bindings = <&kp EXCL>;
+            key-positions = <39 1>;
+            layers = <0>;
+        };
+
+        tres_almohadilla {
+            bindings = <&kp HASH>;
+            key-positions = <39 3>;
+            layers = <0>;
+        };
+
+        cuatro_dolar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <39 4>;
+        };
+
+        cinco_porcentaje {
+            bindings = <&kp PERCENT>;
+            key-positions = <39 5>;
+        };
+
+        seis_sombrero {
+            bindings = <&kp CARET>;
+            key-positions = <39 7>;
+        };
+
+        siete_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <39 8>;
+        };
+
+        nueve_parent {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <39 10>;
+        };
+
+        diez_rparent {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <39 11>;
+        };
     };
 
     keymap {
