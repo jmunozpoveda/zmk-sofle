@@ -155,6 +155,11 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        TOGGLE_LAYER_2 {
+            bindings = <&tog 2>;
+            key-positions = <56 61>;
+        };
     };
 
     keymap {
